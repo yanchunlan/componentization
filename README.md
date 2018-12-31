@@ -5,20 +5,20 @@
 组件化——模块组件与通用组件，可分为业务组件与Ui组件等等
 比如下拉刷新可作为多个项目使用的Ui组件，如登录模块有多条业务线采用相同逻辑，可作为业务组件存在，多个团队使用
 
-####好处
+#### 好处
 - 业务组件可以单独分配并行开发
 - 单个组件业务可以由开发者自行决定采取MVC/MVP/MVVM架构而不影响整体大局
 - 新同学接手项目分配任务可单独分配某一个模块任务，不必关心整个项目
 - 若公司有多个团队，优秀代码组件可快速移植复用
 - 测试可单独测试某个模块
 
-####效果图
+#### 效果图
 ![效果图.gif](https://upload-images.jianshu.io/upload_images/9387746-04c9a3837c3f621d.gif?imageMogr2/auto-orient/strip)
 
-####项目结构
+#### 项目结构
 ![项目结构.png](https://upload-images.jianshu.io/upload_images/9387746-cefcf9579f36a876.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-####版本控制
+#### 版本控制
 app目录下新建一个config,gradle文件，用于版本统一管理和控制
 ```
 ext {
