@@ -1,0 +1,26 @@
+ext {
+    isApplication = false
+    android = [
+            compileSdkVersion: 27,
+            applicationId    : "com.peakmain.testproject",
+            minSdkVersion    : 19,
+            targetSdkVersion : 27,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+    dependencies = [
+            support_v7       : 'com.android.support:appcompat-v7:27.1.1',
+            design           : 'com.android.support:design:27.1.1',
+            cardview           : 'com.android.support:cardview-v7:27.1.1',
+            constraint_layout: 'com.android.support.constraint:constraint-layout:1.1.3',
+            ultra_refresh: 'in.srain.cube:ultra-ptr:1.0.11',
+            circleimageview: 'de.hdodenhof:circleimageview:2.2.0',
+            banners: 'com.allure0:LMBanners:1.0.8',
+            recycleviewAdapter: 'com.allure0:LMRecycleViewAdapter:1.0.1',
+            glide:  'com.github.bumptech.glide:glide:3.7.0',
+            activityrouter:  'com.github.mzule.activityrouter:activityrouter:1.2.2',
+            activityroutercompiler:  'com.github.mzule.activityrouter:compiler:1.1.7',
+            eventbus: 'org.greenrobot:eventbus:3.0.0'
+
+    ]
+}

@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation rootProject.ext.dependencies.support_v7
+    implementation rootProject.ext.dependencies.constraint_layout
+    implementation rootProject.ext.dependencies.design
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //下拉刷新
+    api rootProject.ext.dependencies.ultra_refresh
+    //圆角图片
+    api rootProject.ext.dependencies.circleimageview
+    //banners
+    api rootProject.ext.dependencies.banners
+    api rootProject.ext.dependencies.recycleviewAdapter
+    api rootProject.ext.dependencies.cardview
+    api rootProject.ext.dependencies.glide
+    api rootProject.ext.dependencies.activityrouter
+    annotationProcessor rootProject.ext.dependencies.activityroutercompiler
+
+}
